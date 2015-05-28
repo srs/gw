@@ -17,4 +17,16 @@ Run it using the `gw` command:
 ## Cross-platform build
 
 Using goxc (https://github.com/laher/goxc) to build for all supported
-platforms. First run `goxc -t` to build tools for every platform.
+platforms.
+
+Before running the commands you have to build tools for every platform:
+
+    goxc -t
+
+Then, compile binaries for the platforms:
+
+    goxc -d=bin -os="linux darwin windows" xc
+
+To clean output folders:
+
+    goxc -d=bin -os="linux darwin windows" clean
