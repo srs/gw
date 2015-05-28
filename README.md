@@ -13,3 +13,8 @@ Since I do not have any binaries yet, you have to build it yourself.
 Run it using the `gw` command:
 
     ./gw
+
+## Cross-platform build
+
+Using goxc (https://github.com/laher/goxc) to build for all supported
+platforms. First run `goxc -t` to build tools for every platform.
