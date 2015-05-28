@@ -25,8 +25,8 @@ Before running the commands you have to build tools for every platform:
 
 Then, compile binaries for the platforms:
 
-    goxc -d=bin -os="linux darwin windows" xc
+    goxc xc
 
 To clean output folders:
 
-    goxc -d=bin -os="linux darwin windows" clean
+    goxc clean
