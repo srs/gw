@@ -16,7 +16,7 @@ func fileExists(name string) bool {
 
 func getGradleExec() string {
 	if isWindows() {
-		return "gradle.exe"
+		return "gradle.bat"
 	}
 
 	return "gradle"
@@ -40,7 +40,7 @@ func findGradleExec() string {
 
 func getGradleWExec() string {
 	if isWindows() {
-		return "gradlew.exe"
+		return "gradlew.bat"
 	}
 
 	return "gradlew"
@@ -86,7 +86,7 @@ func printNoGradleWNotice(exec string) {
 func printNoGradleError(exec string) {
 	fmt.Println()
 	fmt.Println(ansi.Color("ERROR:", "red+b"))
-	fmt.Println("No %s exec found in path. Please install gradle.")
+	fmt.Printf("No %s exec found in path. Please install gradle.", exec)
 	fmt.Println("(http://gradle.org/docs/current/userguide/installation.html)")
 	fmt.Println()
 }
