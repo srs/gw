@@ -16,7 +16,7 @@ func fileExists(name string) bool {
 
 func getGradleExec() string {
 	if isWindows() {
-		return "gradle.exe"
+		return "gradle.bat"
 	}
 
 	return "gradle"
@@ -40,7 +40,7 @@ func findGradleExec() string {
 
 func getGradleWExec() string {
 	if isWindows() {
-		return "gradlew.exe"
+		return "gradlew.bat"
 	}
 
 	return "gradlew"
